@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Ravuthar - Portfolio</title>
+  <meta name="description" content="Mohamed Ravuthar's Portfolio - Showcasing web development projects and skills.">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #00bfff;
+    }
+
+    #profile-pic {
+      width: 150px;
+      border-radius: 50%;
+      margin: 15px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    #themeToggle, #downloadResume {
+      background-color: #00bfff;
+      border: none;
+      padding: 8px 12px;
+      color: #121212;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #ff4747;
+    }
+
+    .project {
+      background-color: #1e1e1e;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      color: #00bfff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1e1e1e;
+      color: #aaa;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    .light-theme {
+      background-color: #f5f5f5;
+      color: #121212;
+    }
+
+    .light-theme header {
+      background-color: #e0e0e0;
+    }
+
+    .light-theme nav a {
+      color: #121212;
+    }
+
+    .light-theme #themeToggle, .light-theme #downloadResume {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+
+    .light-theme .project {
+      background-color: #ddd;
+    }
+
+    .light-theme footer {
+      background-color: #e0e0e0;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a id="downloadResume" href="ravuthar.pdf" download>Download Resume</a>
+    <h1>Mohamed Ravuthar</h1>
+    <img id="profile-pic" src="ravuthar.jpg" alt="Profile Photo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm learning web development. I love creating simple websites and exploring JavaScript. This is my first portfolio!</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>My First Website</h3>
+      <p>A simple HTML & CSS website I made while learning.</p>
+    </div>
+    <div class="project">
+      <h3>JavaScript Calculator</h3>
+      <p>A basic calculator built using JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: 23ai003@amjaincollege.edu.in</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ravuthar</p>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('themeToggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+
+</body>
+</html>
